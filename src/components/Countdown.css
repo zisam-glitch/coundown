@@ -1,0 +1,43 @@
+/* src/components/Countdown.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller heading on small screens */
+    }
+
+    .time {
+        font-size: 2.5em; /* Smaller time display on small screens */
+    }
+
+    .timer {
+        font-size: 1.2em; /* Adjust overall size for small screens */
+    }
+}

@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Countdown from './components/Countdown';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // Set your target date here (e.g., New Year's Eve)
+    const targetDate = new Date('2025-01-01T00:00:00');
+
+    return (
+        <div className="App">
+            <Countdown targetDate={targetDate} />
+        </div>
+    );
 }
 
 export default App;
